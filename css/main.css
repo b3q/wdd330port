@@ -1,0 +1,34 @@
+body {
+    margin: 0 auto;
+    width: 900px;
+}
+
+header {
+    background-color: rgb(107, 136, 173);
+    padding: 20px;
+}
+
+section.notes {
+    /* margin-left: 20px; */
+}
+
+a {
+    text-decoration: none;
+}
+
+a h1 {
+    color: white;
+}
+
+a:hover h1 {
+    color: orange;
+}
+
+h3 {
+    background-color: orange;
+    padding: 10px 20px;
+}
+
+.content {
+    margin-left: 20px;
+}
