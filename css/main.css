@@ -1,6 +1,6 @@
 body {
     margin: 0 auto;
-    width: 900px;
+    width: 90%;
 }
 
 header {
@@ -31,4 +31,10 @@ h3 {
 
 .content {
     margin-left: 20px;
+}
+
+@media only screen and (min-width: 32.5em) {
+    body {
+        width: 70%;
+    }
 }
