@@ -13,9 +13,29 @@
         <h2>Week02 Notes</h2>
     </header>
     <section class="notes">
+        <h3>Team Exercises:</h3>
+        <ul>
+            <li><a href="core-req01.html">Core Requirement 01</a></li>
+            <li><a href="core-req02.html">Core Requirement 02</a></li>
+        </ul>
         <h3>JavaScript: Novice to Ninja - Chapter 3 Notes</h3>
         <p>when deleting array items and you use the <code>delete avengers[3];</code> then that item is removed but it still shows as undefined in the array -- <code>['Captain America', 'Iron Man', 'Thor', undefined]</code></p>
-        
+        <p>Sets do not have index notation for inspecting individual entries</p>
+        <p>Finding items in a set is much faster than finding items in an array</p>
+        <div class="question">
+            <p><strong>I don't get the following:</strong> <br>
+                By combining this use of the spread operator with the ability to pass an array to the new Set() constructor, we now have a convenient way to create a copy of an array with any duplicate values removed:
+                <pre>
+                    <code> 
+        const duplicate = [3, 1, 4, 1, 5, 9, 2, 6 ,5,3,5,9];
+        << [ 3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5, 9 ]
+
+        const nonDuplicate = [...new Set(repeatedArray)];
+        << [ 3, 1, 4, 5, 9, 2, 6 ]
+                    </code>
+                </pre>  
+            </p>
+        </div>
     </section>
     
 </body>

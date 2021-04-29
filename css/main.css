@@ -33,6 +33,11 @@ h3 {
     margin-left: 20px;
 }
 
+.question {
+    background-color: beige;
+    padding: 10px;
+}
+
 @media only screen and (min-width: 32.5em) {
     body {
         width: 70%;

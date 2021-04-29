@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Core Req 01</title>
+    <script>
+        function displayInput() {
+            let inputtxt = document.getElementById('inputtxt').value;
+            document.getElementById('outputDiv').innerHTML = inputtxt;
+        }
+        
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Core Req 01</h1>
+    </header>
+    <label for="inputtxt">Input:</label>
+    <input type="text" name="inputtxt" id="inputtxt">
+    <button type="button" onclick="displayInput()">DaButton</button>
+    <div id="outputDiv"></div>
+
+</body>
+</html>
