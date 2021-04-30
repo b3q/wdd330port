@@ -21,9 +21,11 @@
         const subtraction = (num1, num2) => {
             document.getElementById('result2').innerHTML = num1 - num2;
         }
-        const multiply = function (num1, num2) {
+        const multiply = function(num1, num2) {
             document.getElementById('result2').innerHTML = num1 - num2;
         }
+        // arrow function
+        const multiply = (num1, num2) => num1 * num2;
         
     </script>
 </head>
@@ -38,6 +40,7 @@
     <input type="text" name="inputnum2" id="inputnum2"> 
     <span>=</span>
     <span id="daAnswer"></span>
+    <div id="result2"></div>
 
 </body>
 </html>
