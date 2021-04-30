@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Core Req 03</title>
+    <script>
+
+        function addNumbers() {
+            let num1 = parseInt(document.getElementById('inputnum1').value);
+            let num2 = parseInt(document.getElementById('inputnum2').value);
+            answr = num1 + num2;
+            document.getElementById('daAnswer').innerHTML = answr;
+        }
+
+        // stretch
+        function add(num1, num2) {
+            document.getElementById('result2').innerHTML = num1 + num2;
+        }
+        const subtraction = (num1, num2) => {
+            document.getElementById('result2').innerHTML = num1 - num2;
+        }
+        const multiply = function (num1, num2) {
+            document.getElementById('result2').innerHTML = num1 - num2;
+        }
+        
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Core Req 03</h1>
+    </header>
+    
+    <h2>Addition</h2>
+    <input type="text" name="inputnum1" id="inputnum1">
+    <button type="button" onclick="addNumbers()">+</button>
+    <input type="text" name="inputnum2" id="inputnum2"> 
+    <span>=</span>
+    <span id="daAnswer"></span>
+
+</body>
+</html>
