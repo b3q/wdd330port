@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week03 Activities</title>
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+    <header>
+        <a href="../index.html"><h1>WDD 330 Portfolio - b3q</h1></a>
+        <h2>Week03 Notes</h2>
+    </header>
+    <section class="notes">
+        <h3>Team Exercises:</h3>
+        <h3>Object Methods "This" - Notes:</h3>
+        <h4>The consequences of unbound this</h4>
+        <p>If you come from another programming language, then you are probably used to the idea of a "bound this", where methods defined in an object always have this referencing that object.</p>
+
+        <p>In JavaScript this is “free”, its value is evaluated at call-time and does not depend on where the method was declared, but rather on what object is “before the dot”.</p>
+
+        <p>The concept of run-time evaluated this has both pluses and minuses. <strong>On the one hand, a function can be reused for different objects. On the other hand, the greater flexibility creates more possibilities for mistakes.</strong></p>
+
+        <p>Here our position is not to judge whether this language design decision is good or bad. We’ll understand how to work with it, how to get benefits and avoid problems.</p>
+
+        <h4>Summary</h4>
+        <ul>
+            <li>Functions that are stored in object properties are called “methods”.</li>
+            <li>Methods allow objects to “act” like object.doSomething().</li>
+            <li>Methods can reference the object as this.</li>
+            <li>The value of this is defined at run-time.</li>
+        </ul>
+
+        <p>
+            When a function is declared, it may use this, but that this has no value until the function is called.
+            A function can be copied between objects.
+            When a function is called in the “method” syntax: object.method(), the value of this during the call is object.
+        </p>
+        <p><strong>Please note that arrow functions are special: they have no this. When this is accessed inside an arrow function, it is taken from outside</strong></p>
+
+        <h3>Objects - Notes:</h3>
+        <p><strong>All objects are mutable at any time when a program is running.</strong> This means that its properties and methods can be changed or removed, and new properties and methods can be added to the object, even if it was declared using const .</p>
+        
+        
+    </section>
+    
+</body>
+</html>
