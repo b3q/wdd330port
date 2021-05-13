@@ -6,5 +6,16 @@ function makeHero(event) {
     const hero = {}; // create an empty object
     hero.name = form.heroName.value; // create a name property based on the input field's value
     alert(JSON.stringify(hero)); // convert object to JSON string and display in alert dialog
+    hero.realName = form.realName.value;
+    
+    // NOTE: iterating over check boxes
+    // hero.powers = [];
+    // for (let i=0; i < form.powers.length; i++) {
+    //     if (form.powers[i].checked) {
+    //         hero.powers.push(form.powers[i].value);
+    //     }
+    // }
+    // This one line below (using spread operator) does the same thing as the lines above.
+    hero.powers = [...form.powers].filter(box => box.checked).map(box => box.value);
     return hero;
 }

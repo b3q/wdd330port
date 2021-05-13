@@ -36,7 +36,23 @@
     transition: background 0.2s ease-in-out;
 }
 
-#square1,
+.square:nth-child(-n+3) {
+    border-top: none;
+}
+
+.square:nth-child(3n+1) {
+    border-left: none;
+}
+
+.square:nth-child(3n) {
+    border-right: none;
+}
+
+.square:nth-child(n+7) {
+    border-bottom: none;
+}
+
+/* #square1,
 #square2,
 #square3 {
     border-top: none;
@@ -58,7 +74,7 @@
 #square8,
 #square9 {
     border-bottom: none;
-}
+} */
 
 .resetblock {
     margin: 30px;
