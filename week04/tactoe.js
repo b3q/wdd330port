@@ -12,6 +12,11 @@ function yourTurn(event) {
     else player = player1;
 }
 
+function winner() {
+    // Display winner when player gets three in a row
+    // Create array of entries in divs and test for three in a row
+}
+
 // function resetDaBoard() {
 //     const daBoard = document.querySelector('.daBoard');
 //     for (let i=0; i < daBoard.children.length; i++) {

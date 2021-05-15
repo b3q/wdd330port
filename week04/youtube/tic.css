@@ -1,0 +1,61 @@
+:root {
+    --darkblue: #384241;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    color: var(--darkblue);
+    font-family: sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 54px;
+    text-transform: uppercase;
+}
+
+.container {
+    padding: 40px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#gameboard {
+    width: 450px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top; 40px;
+}
+
+.box {
+    height: 150px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--darkblue);
+    font-size: 150px;
+}
+
+button {
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: var(--darkblue);
+    color: white;
+    border-color: var(--darkblue);
+    font-size: 18px;
+    transition: 200ms transform;
+    margin-bottom: 40px;
+}
+
+button:hover {
+    cursor: pointer;
+    transform: translateY(-2px);
+}
